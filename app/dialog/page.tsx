@@ -1,17 +1,18 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
 import {
     Dialog,
+    DialogTrigger,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
-    DialogTrigger
+    DialogDescription
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 
 export default function DialogPage() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen gap-6">
-            <h1 className="text-3xl font-bold mb-4">Dialog Demo</h1>
+            <h1 className="text-3xl font-bold mb-4">Dialog Example</h1>
 
             <Dialog>
                 <DialogTrigger asChild>
@@ -25,9 +26,9 @@ export default function DialogPage() {
                     </DialogHeader>
 
                     <p>Dialog Content</p>
-                    <Button variant="outline">Other dialog content</Button>
+                    <Button variant="outline">Other Dialog Content</Button>
                 </DialogContent>
             </Dialog>
         </div>
-    )
+    );
 }
